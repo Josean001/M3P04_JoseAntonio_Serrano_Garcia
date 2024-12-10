@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    color: #00509e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Container for Inputs */
+#notas-container {
+    display: grid;
+    background-color: #fff;
+    border: 2px solid #d4e4f3;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: stretch;
+    justify-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#notas-container label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#notas-container input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid #d4e4f3;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    background-color: #007BFF;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result Section */
+#resultado {
+    background-color: #fff;
+    border: 2px solid #d4e4f3;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #notas-container input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -2,50 +2,57 @@
 @author Jose Antonio Serrano
 @email serjosedev@gmail.com
 @create date 2024-11-08 20:30:22
-@modify date 2024-11-08 20:36:18
+@modify date 2024-12-10 11:53:39
 @desc [description]
 -->
 
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- PRACTICA 21 -->
-        <meta name="copyright" content="© Jose Antonio Serrano García">
-        <!-- Autor -->
-        <meta name="author" content="Jose Antonio Serrano García">
-        <!-- Descripción -->
-        <meta name="description" content="Practica 21 de HTML">
-        <!-- Palabras claves -->
-        <meta name="keywords" content="practica,21,jose,developer, contacto">
-        <!-- Modelo de cifrado -->
-        <meta charset="UTF-8">
-        <!-- Link de las hoja de estilos -->
-        <link rel="stylesheet" href="../css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Titulo del la página web -->
-        <title>Práctica 21</title>
-    </head>
-    <body>
-        <h1>Calculadora de Notas</h1>
-    
-        <!-- Input para ingresar las 6 notas -->
-        <div id="notas-container">
-            <label>Introduce las 6 notas:</label><br>
-            <input type="number" id="nota1" placeholder="Nota 1" min="0" max="10" required>
-            <input type="number" id="nota2" placeholder="Nota 2" min="0" max="10" required>
-            <input type="number" id="nota3" placeholder="Nota 3" min="0" max="10" required>
-            <input type="number" id="nota4" placeholder="Nota 4" min="0" max="10" required>
-            <input type="number" id="nota5" placeholder="Nota 5" min="0" max="10" required>
-            <input type="number" id="nota6" placeholder="Nota 6" min="0" max="10" required>
-        </div>
-    
-        <!-- Botones para mostrar la nota media y la correspondencia -->
-        <button onclick="mostrarMedia()">Mostrar Nota Media</button>
-        <button onclick="mostrarCorrespondencia()">Mostrar Correspondencia</button>
-    
-        <!-- Área de resultados -->
-        <div id="resultado"></div>
+
+<head>
+    <!-- PRACTICA 21 -->
+    <meta name="copyright" content="© Jose Antonio Serrano García">
+    <!-- Autor -->
+    <meta name="author" content="Jose Antonio Serrano García">
+    <!-- Descripción -->
+    <meta name="description" content="Practica 21 de HTML">
+    <!-- Palabras claves -->
+    <meta name="keywords" content="practica,21,jose,developer, contacto">
+    <!-- Modelo de cifrado -->
+    <meta charset="UTF-8">
+    <!-- Link de las hoja de estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo del la página web -->
+    <title>Práctica 21</title>
+</head>
+
+<body>
+    <h1>Calculadora de Notas</h1>
+
+    <div id="notas-container">
+        <label>Introduce las 6 notas:</label><br>
+        <input type="number" class="nota" id="nota1" placeholder="Nota 1" min="0" max="10" required>
+        <input type="number" class="nota" id="nota2" placeholder="Nota 2" min="0" max="10" required>
+        <input type="number" class="nota" id="nota3" placeholder="Nota 3" min="0" max="10" required>
+        <input type="number" class="nota" id="nota4" placeholder="Nota 4" min="0" max="10" required>
+        <input type="number" class="nota" id="nota5" placeholder="Nota 5" min="0" max="10" required>
+        <input type="number" class="nota" id="nota6" placeholder="Nota 6" min="0" max="10" required>
+    </div>
+
+    <!-- Botón para añadir más notas -->
+    <button id="addNotaButton">Añadir Nota</button>
+    <button id="removeNotaButton">Eliminar Nota</button>
+
+
+    <!-- Botones para mostrar la nota media y la correspondencia -->
+    <button onclick="mostrarMedia()">Mostrar Nota Media</button>
+    <button onclick="mostrarCorrespondencia()">Mostrar Correspondencia</button>
+
+    <!-- Área de resultados -->
+    <div id="resultado"></div>
 
     <script src="src/script.js"></script>
 </body>
+
 </html>
